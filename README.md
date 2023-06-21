@@ -43,41 +43,9 @@ Colaboración en tiempo real: Deepnote permite la colaboración en tiempo real, 
 Integracióncon GitHub: Puedes sincronizar tus notebooks con tus repositorios de GitHub, lo que facilita el seguimiento de versiones y la colaboración.
 Recursos informáticos escalables: Deepnote te permite ajustar los recursos informáticos según tus necesidades, lo que es útil para trabajar con grandes conjuntos de datos o realizar cálculos intensivos.
 Entorno completamente administrado: No tienes que preocuparte por la configuración del entorno o la gestión de dependencias, ya que Deepnote se encarga de todo eso por ti.
+
+
 Código
-Para comenzar, asegúrate de tener todas las bibliotecas necesarias instaladas. Puedes hacerlo ejecutando los siguientes comandos en tu notebook:
+Para comenzar, asegúrate de tener todas las bibliotecas necesarias instaladas. 
 
-python
-Copy code
-!pip install --upgrade pip
-python
-Copy code
-!pip install palmerpenguins==0.1.4 numpy==1.23.4 pandas==1.5.1 seaborn==0.12.1 matplotlib==3.6.0 empiricaldist==0.6.7 statsmodels==0.13.5 scikit-learn==1.1.2 pyjanitor==0.23.1 session-info
-A continuación, importa todas las bibliotecas necesarias para el análisis:
-
-python
-Copy code
-import empiricaldist
-import janitor
-import matplotlib.pyplot as plt
-import numpy as np
-import palmerpenguins
-import pandas as pd
-import scipy.stats
-import seaborn as sns
-import sklearn.metrics
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
-import statsmodels.stats as ss
-import session_info
-
-%matplotlib inline
-sns.set_style(style='whitegrid')
-sns.set_context(context='notebook')
-plt.rcParams['figure.figsize'] = (11, 9.4)
-
-penguin_color = {
-    'Adelie': '#ff6602ff',
-    'Gentoo': '#0f7175ff',
-    'Chinstrap': '#c65dc9ff'
-}
 ¡Ahora estás listo para comenzar tu análisis exploratorio de datos!
